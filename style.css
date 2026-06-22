@@ -251,3 +251,21 @@ footer{
     }
 
 }
+.item-carrinho{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #23145b;
+}
+
+.item-carrinho button{
+    background:red;
+    border:none;
+    color:white;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
