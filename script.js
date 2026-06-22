@@ -19,14 +19,21 @@ function atualizarCarrinho(){
 
     lista.innerHTML = "";
 
-    carrinho.forEach(item => {
+    carrinho.forEach((item,index) => {
 
         lista.innerHTML += `
-            <p>
-                ${item.produto} - R$ ${item.preco.toFixed(2)}
-            </p>
-        `;
+            <div class="item-carrinho">
 
+                <span>
+                    ${item.produto} - R$ ${item.preco.toFixed(2)}
+                </span>
+
+                <button onclick="remover(${index})">
+                    ➖
+                </button>
+
+            </div>
+        `;
     });
 
     document.getElementById("total").innerHTML =
