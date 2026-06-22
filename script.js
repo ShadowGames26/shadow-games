@@ -38,6 +38,15 @@ function atualizarCarrinho(){
 
     document.getElementById("total").innerHTML =
     `Total: R$ ${total.toFixed(2)}`;
+    
+}
+function remover(index){
+
+    total -= carrinho[index].preco;
+
+    carrinho.splice(index,1);
+
+    atualizarCarrinho();
 }
 
 function finalizarPedido(){
