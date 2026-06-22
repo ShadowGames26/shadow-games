@@ -31,7 +31,7 @@ function atualizarCarrinho(){
                 <button onclick="remover(${index})">
                     ➖
                 </button>
-
+                
             </div>
         `;
     });
@@ -39,6 +39,8 @@ function atualizarCarrinho(){
     document.getElementById("total").innerHTML =
     `Total: R$ ${total.toFixed(2)}`;
     
+    document.getElementById("contador").innerText =
+`(${carrinho.length})`;
 }
 function remover(index){
 
