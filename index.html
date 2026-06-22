@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Shadow Games</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        SHADOW GAMES
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#discord">Discord</a>
+    </nav>
+
+</header>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-content">
+
+        <img src="img/logo.png" alt="Shadow Games">
+
+        <h1>
+            Jogos, Contas e Serviços Gamer
+        </h1>
+
+        <p>
+            A melhor loja gamer para otimizações,
+            contas e programas Steam.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#produtos" class="btn">
+                Ver Produtos
+            </a>
+
+            <a href="https://discord.gg/7HT3gyEJxp"
+               target="_blank"
+               class="btn btn-outline">
+
+                Entrar no Discord
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="produtos" class="produtos">
+
+    <h2>Produtos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🚀 Otimização Básica</h3>
+            <p>Melhore o desempenho do seu PC.</p>
+            <span>R$ 39,99</span>
+            <button onclick="adicionar('Otimização Básica',39.99)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Otimização Completa</h3>
+            <p>Mais FPS e melhor desempenho.</p>
+            <span>R$ 59,99</span>
+            <button onclick="adicionar('Otimização Completa',59.99)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Otimização Avançada</h3>
+            <span>R$ 79,99</span>
+            <button onclick="adicionar('Otimização Avançada',79.99)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Steam 1071 Jogos</h3>
+            <span>R$ 180,00</span>
+            <button onclick="adicionar('Steam 1071 Jogos',180)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>👑 Steam 27000 Jogos</h3>
+            <span>R$ 300,00</span>
+            <button onclick="adicionar('Steam 27000 Jogos',300)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🚗 GTA V Instalável</h3>
+            <span>R$ 5,00</span>
+            <button onclick="adicionar('GTA V Instalável',5)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>🔑 Conta Rockstar</h3>
+            <span>R$ 2,80</span>
+            <button onclick="adicionar('Conta Rockstar',2.8)">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="carrinho">
+
+    <h2>🛒 Carrinho</h2>
+
+    <div id="lista-carrinho"></div>
+
+    <h3 id="total">
+        Total: R$ 0,00
+    </h3>
+
+    <button class="finalizar" onclick="finalizarPedido()">
+        Finalizar no Discord
+    </button>
+
+</section>
+
+<footer>
+
+    © 2026 Shadow Games
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
